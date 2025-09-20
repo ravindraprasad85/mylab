@@ -1,0 +1,4 @@
+HI everyone
+We wre learning File IO
+using Java
+I like programming in Java.

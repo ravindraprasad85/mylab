@@ -1,0 +1,13 @@
+NaN: (Not aNumber)
+None: (For Object Data type)
+
+isnull()
+True - NaN
+False - Value present
+
+dropna(axis = 0, inplace = True)
+
+interpolation
+leanear, polynomial, timer, 
+
+df.interpolation(method=leaner,axis=0,inplace=True)

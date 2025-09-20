@@ -1,0 +1,10 @@
+Problem
+- SLOW
+- List 
+
+Travis owliphant 2005 
+NumPy introduce Array 
+
+Numerical Python using Array 
+
+2d array and matrix almost similar 

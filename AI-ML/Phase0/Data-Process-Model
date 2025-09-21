@@ -1,0 +1,6 @@
+
+
+RAW Data -> Handle MIssing Data -> Encode Categorical Values -> Feature Scaling -> Split Data -> Prepared Data
+
+
+Always check the missing data 

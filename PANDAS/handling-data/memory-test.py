@@ -4,5 +4,5 @@
 
 
 import pandas as pd
-df = pd.read_excel("Python\sample_files\SampleSuperstore.xlsx")
+df = pd.read_excel(r"Python\sample_files\SampleSuperstore.xlsx")
 print(df.info())  #To summarize the dataset, used memory,

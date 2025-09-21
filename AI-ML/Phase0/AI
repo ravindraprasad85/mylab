@@ -1,15 +1,15 @@
-LAYER-1 or Outer Layer # When 
+## LAYER-1 or Outer Layer # When 
 * Any technique which help machine to act smart 
 * Instructing robot to play chess
 
-LAYER-2 MACHINE LAYERS
+## LAYER-2 MACHINE LAYERS
 * When machine start learning itself from data pattern 
 * Instead of coding and feeding the data , its start learning
 * Student study hours and student marks obtained pattern 
 * Machine Learning is the equal to giving the machine a memory of examples not the rules
 * Scikit Learn is Machine Learning tool
 
-LAYER-3 DEEP LEARNING (USE NURONS and STRONG MATHS)
+## LAYER-3 DEEP LEARNING (USE NURONS and STRONG MATHS)
 * A smart powerfull brain which would be inside Machine Learning
 * It will try to mimic that how human brain works Like Face recognition (USING NURONS)
 * Its require 

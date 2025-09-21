@@ -1,0 +1,44 @@
+LAYER-2 MACHINE LAYERS
+* When machine start learning itself from data pattern 
+* Instead of coding and feeding the data , its start learning
+* Student study hours and student marks obtained pattern 
+* Machine Learning is the equal to giving the machine a memory of examples not the rules
+* Scikit Learn is Machine Learning tool
+
+
+Which type of Machine Learning should be used
+
+## Supervised Learning (Feed INPUT + OUTPUT)
+    * Ideal for task with labeld data which the desired data is known
+    * Ex: A teacher given the Q & A for sum and then asking questions from same pattern (like sum here)
+
+## Unsupervised Learning (Feed ONLY INPUT)
+    * Entering into a party where all are unknown and then identifying by labeling (Used in unlabeled data)
+        * By cloths, office or formal dress
+        * By teen, adult age
+        * By dancing, eating
+    * We created clusters based on pattern 
+    * We only get the input but not the answers like above we tried to create group and segmentation 
+    * Marketting, Fraud Detection, 
+
+## Reinforcement Learning (ACTIONS + REWARDS)
+    * Best for training agents to make decisions tgrough interaction with an environment
+    * We trained a DOG and given buiscuit once followed and punished/trained when not followed
+    * 
+
+## CORE MACHINE LEARNING CONCEPTS OVERVIEW
+* INPUT (X) #Question
+* OUTPUT (y) #Answer
+* Model 
+     Creating rules like when increasing +1 study hours , +5 marks are increasing (creating a math formula which called Model)
+    * This will help to create a Model ..it will help to train the pattern 
+    * Based on the Model by feeding rules , It will help to predict the pattern    
+* Training 
+    * Creating a formula and insrcting to predict based on the Model/Formula (Scikit Learn use fit)
+* Testing
+    * We will provide a new data and test the prediction based on trained Model
+    * Study hours 70 and test the predicted marks 
+* Prediction
+    * Keep check the Prediction based on trained Model
+
+

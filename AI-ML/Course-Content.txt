@@ -1,0 +1,525 @@
+# Scikit-Learn Syllabus - By Sagar Chouksey
+
+**A Machine Learning Library for Training Models**
+
+## → Maths Required (Before Phase 0)
+
+**Goal:** Understand the foundational maths behind ML algorithms
+
+**Topics Covered:**
+
+- Basic Statistics (mean, median, mode, variance)
+- Probability Concepts
+- Linear Algebra (vectors, matrices, dot product)
+- Derivatives and Gradient
+- Distance Metrics (Euclidean, Manhattan)
+- Concept of Error and Cost Functions
+
+---
+
+## → Phase 0: Foundations of Machine Learning
+
+**Goal:** Understand what Machine Learning is and where it is used
+
+**Topics Covered:**
+
+- What is Machine Learning?
+- Difference: AI vs ML vs Deep Learning
+- Types of ML: Supervised, Unsupervised, Reinforcement
+- Core ML Concepts:
+    
+    → Features (X) and Target (y)
+    
+    → Model, training, testing, prediction
+    
+- Where Scikit-learn fits into the ML workflow
+- Why learn Scikit-Learn for real-world projects
+
+**Assignment/Project:**
+
+List 3 real-life ML applications and break each into X and y
+
+---
+
+## → Phase 1: Python, NumPy & Pandas for ML
+
+**Goal:** Gain basic programming and data handling skills
+
+**Topics Covered:**
+
+- Python Refresher:
+    
+    → Variables, loops, conditions, functions, lists, dictionaries
+    
+- NumPy:
+    
+    → Creating arrays, indexing, slicing, reshaping
+    
+    → Array-level operations
+    
+- Pandas:
+    
+    → Series vs DataFrame
+    
+    → Loading datasets (CSV)
+    
+    → Filtering, slicing, subsetting
+    
+    → Descriptive statistics: `.head()`, `.info()`, `.describe()`
+    
+
+**Assignment/Project:**
+
+Load a dataset and explore its structure: shape, head, summary, and apply filters
+
+---
+
+## → Phase 2: Data Preprocessing
+
+**Goal:** Clean, transform, and prepare data for training
+
+**Topics Covered:**
+
+- Handling Missing Values:
+    
+    → `.dropna()`, `.fillna()`, checking with `.isnull()`
+    
+- Encoding Categorical Data:
+    
+    → Label Encoding
+    
+    → One-Hot Encoding
+    
+- Feature Scaling:
+    
+    → StandardScaler
+    
+    → MinMaxScaler
+    
+- Splitting Data:
+    
+    → `train_test_split(X, y)`
+    
+    → Understanding test_size, random_state, shuffle
+    
+
+**Assignment/Project:**
+
+Take a CSV file with missing and categorical data → clean, encode, scale, and split
+
+---
+
+## → Phase 3: Supervised Machine Learning
+
+**Goal:** Train predictive models for classification and regression tasks
+
+**Topics Covered:**
+
+- Regression:
+    
+    → Linear Regression using `LinearRegression()`
+    
+- Classification:
+    
+    → Logistic Regression
+    
+    → K-Nearest Neighbors (KNN)
+    
+    → Decision Tree Classifier
+    
+- Model Training & Prediction:
+    
+    → `.fit(X_train, y_train)`
+    
+    → `.predict(X_test)`
+    
+- Underfitting vs Overfitting
+    
+    → Concepts and visual understanding
+    
+
+**Assignment/Project:**
+
+1. Predict house prices using size (regression)
+2. Predict student pass/fail using study hours (classification)
+
+---
+
+## → Phase 4: Model Evaluation & Metrics
+
+**Goal:** Evaluate model performance using appropriate metrics
+
+**Topics Covered:**
+
+**For Classification:**
+
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- Confusion Matrix
+- `classification_report` and `ConfusionMatrixDisplay`
+
+**For Regression:**
+
+- Mean Absolute Error (MAE)
+- Mean Squared Error (MSE)
+- Root Mean Squared Error (RMSE)
+- R² Score
+
+**Scikit-learn Modules:**
+
+- `sklearn.metrics`
+
+**Assignment/Project:**
+
+Use classification and regression models and evaluate them using 3+ metrics each
+
+---
+
+## → Phase 5: Unsupervised Learning (Clustering)
+
+**Goal:** Group unlabeled data using similarity-based learning
+
+**Topics Covered:**
+
+- K-Means Clustering:
+    
+    → `.fit()`, `.predict()`, `.inertia_`
+    
+    → Elbow Method to determine `k`
+    
+- Principal Component Analysis (PCA):
+    
+    → Reducing dimensions
+    
+    → `explained_variance_ratio_`, visualizing clusters
+    
+- Visualizing clusters using scatter plots
+- Cluster Labeling and Interpretability
+
+**Assignment/Project:**
+
+Cluster customers by Age and Spending Score using Mall Customer dataset
+
+Visualize clusters and apply PCA
+
+---
+
+## → Phase 6: Model Tuning & Deployment
+
+**Goal:** Improve model accuracy and save models for reuse or deployment
+
+**Topics Covered:**
+
+**Hyperparameter Tuning:**
+
+- `GridSearchCV`
+- `RandomizedSearchCV`
+- Cross-validation
+
+**Model Saving & Loading:**
+
+- Using `joblib`
+- Using `pickle`
+
+**Pipelines:**
+
+- Automate preprocessing + modeling
+- `Pipeline()`, `ColumnTransformer()`
+
+**Assignment/Project:**
+
+Tune a KNN or Decision Tree model using GridSearch → save it → reload it → use for prediction on unseen data
+
+---
+
+## → Final Project (Capstone)
+
+**Goal:** Apply all concepts to a single end-to-end ML problem
+
+- Load raw data
+- Clean and preprocess it
+- Train multiple models
+- Tune the best model
+- Evaluate using metrics
+- Save and reload final model
+- Optional: create a web interface using Streamlit
+
+### **Phase 0: Foundations of Machine Learning (30 Questions)**
+
+### Theoretical (15)
+
+1. What is Machine Learning in your own words?
+2. Differentiate between AI, Machine Learning, and Deep Learning.
+3. Why do we need Machine Learning if we can use rules or code manually?
+4. List 3 real-life examples of ML applications.
+5. Define input (X) and output (y) in ML context.
+6. What is a model in Machine Learning?
+7. Explain the training vs testing phase.
+8. What is prediction in ML?
+9. How does Scikit-learn fit into the ML pipeline?
+10. What are the 3 main types of ML? Briefly explain each.
+11. What is supervised learning with one simple real-life example?
+12. What is reinforcement learning? Give a simple example.
+13. Why is training a model not enough in ML?
+14. Explain the difference between traditional programming and ML.
+15. What are some challenges in using Machine Learning?
+
+### 🛠 Practical (15)
+
+1. Identify X and y from this problem: Predict house price from size and location.
+2. Break down a Netflix recommendation system into input and output.
+3. What type of ML would you use for fraud detection? Why?
+4. What would be the output of a model predicting spam emails?
+5. Match ML types with use cases: [Face recognition, Self-driving car, Chatbot]
+6. Choose which is a classification problem:
+    - Predict weather temperature
+    - Detect whether an email is spam
+7. What kind of ML problem is “grouping customers by purchase behavior”?
+8. Choose the correct pipeline: [Data → Model → Predict → Evaluate] OR [Predict → Model → Train → Data]
+9. Suggest a real dataset where supervised learning can be applied.
+10. From an online shopping site, list 3 features (X) and 1 output (y) to predict delivery time.
+11. Convert a real-world problem into X and y: Predict exam results from hours studied.
+12. Which of these tools help in model training? [Scikit-learn, Pandas, Excel, SQL]
+13. Which part of ML process does `.predict()` belong to?
+14. From the diagram of a model lifecycle (not shown), identify where Scikit-Learn is used.
+15. State whether these are input, output, or model: `data`, `model.predict()`, `target`
+
+---
+
+### **Phase 1: Python, Numpy & Pandas for ML (30 Questions)**
+
+### Theoretical (15)
+
+1. What are variables and how are they used in Python?
+2. What is a list vs dictionary in Python? Give 1 example of each.
+3. What is NumPy and why is it used in ML?
+4. Difference between NumPy array and Python list?
+5. What is Pandas used for?
+6. Define a DataFrame in simple terms.
+7. What are the differences between `.head()` and `.info()`?
+8. What does `.describe()` show us about data?
+9. How do we read a CSV file in Pandas?
+10. Why is indexing important when handling arrays or DataFrames?
+11. What are some common operations you can perform on NumPy arrays?
+12. What is the shape of a 3x4 matrix?
+13. What does `df['column_name']` return in Pandas?
+14. How do you filter rows in Pandas?
+15. What’s the purpose of descriptive statistics in data analysis?
+
+### 🛠 Practical (15)
+
+1. Write code to read a CSV file using Pandas.
+2. Load a dataset and print the first 5 rows.
+3. Use `.describe()` and explain the output you see.
+4. Use `.info()` to check for null values.
+5. Create a NumPy array of shape (3, 2) and multiply it by 2.
+6. Given a list `[1,2,3,4]`, convert it into a NumPy array.
+7. Slice rows 10 to 20 from a Pandas DataFrame.
+8. Filter a DataFrame to show only rows where `Age > 30`.
+9. Create a new column in a DataFrame called `Total` = `Price` * `Quantity`.
+10. Calculate the mean of a column using Pandas.
+11. Replace all missing values in a column with the column’s mean.
+12. Reshape a NumPy array from (6,) to (2,3).
+13. Convert a Python dictionary into a Pandas DataFrame.
+14. Check if any value in a DataFrame column is null.
+15. Rename a column in a Pandas DataFrame.
+
+---
+
+### **Phase 2: Data Preprocessing (30 Questions)**
+
+### Theoretical (15)
+
+1. Why is data cleaning important in ML?
+2. What happens if we don’t handle missing values?
+3. What is label encoding?
+4. What is one-hot encoding and when is it used?
+5. Difference between label encoding and one-hot encoding.
+6. What does feature scaling do to your data?
+7. Compare MinMaxScaler and StandardScaler.
+8. Why do we split data into training and test sets?
+9. What is `train_test_split()` used for?
+10. How does data leakage occur?
+11. When do you use `.dropna()` vs `.fillna()`?
+12. How does encoding affect model performance?
+13. Why do we scale features before training a model?
+14. What does “normalizing” data mean?
+15. What should be the test_size value in `train_test_split()` if you want 80/20 split?
+
+### 🛠 Practical (15)
+
+1. Use `.dropna()` to remove rows with missing values.
+2. Use `.fillna(0)` to fill missing values.
+3. Apply label encoding on a column with values: [‘Male’, ‘Female’, ‘Other’]
+4. Apply one-hot encoding on column: [‘Red’, ‘Blue’, ‘Green’]
+5. Scale a column using StandardScaler.
+6. Use MinMaxScaler to scale a DataFrame with 2 columns.
+7. Split a dataset into training and testing sets (80/20).
+8. Print the shape of X_train and X_test.
+9. Fit a scaler on training data and transform test data.
+10. Combine cleaned, encoded, and scaled data into one pipeline.
+11. Use `.isnull().sum()` to count missing values in each column.
+12. Print unique values of a categorical column.
+13. Encode a binary gender column manually using map function.
+14. Drop a column from a DataFrame using `.drop()`.
+15. Create a pipeline using ColumnTransformer + Scaler + Encoder.
+
+---
+
+### **Phase 3: Supervised Learning (30 Questions)**
+
+### Theoretical (15)
+
+1. What is the difference between regression and classification?
+2. What kind of output does Linear Regression predict?
+3. What does Logistic Regression predict?
+4. What is the purpose of `.fit()` in Scikit-Learn?
+5. What does `.predict()` do in ML models?
+6. What is the K in KNN? How does it affect results?
+7. What is the role of Decision Trees in classification?
+8. What is overfitting? Why is it dangerous?
+9. What is underfitting? How can we identify it?
+10. Why do we use train and test sets during modeling?
+11. How is Logistic Regression different from Linear Regression?
+12. What kind of problems can KNN solve?
+13. How do Decision Trees handle both categorical and numerical data?
+14. How do we choose the best model for our data?
+15. What are hyperparameters in ML?
+
+### 🛠 Practical (15)
+
+1. Train a Linear Regression model to predict house price from size.
+2. Train a Logistic Regression model to predict if a student passes.
+3. Build a KNN model on a small dataset.
+4. Use `.fit()` and `.predict()` on a classification dataset.
+5. Print model coefficients for a linear regression model.
+6. Use `KNeighborsClassifier` with `n_neighbors=3`.
+7. Use `DecisionTreeClassifier` and print the tree depth.
+8. Split your data, train a model, and print accuracy.
+9. Predict for a new data point using a trained model.
+10. Save a trained model using joblib.
+11. Visualize a decision boundary for a binary classifier.
+12. Use multiple features (like age, income) to predict loan approval.
+13. Manually calculate predicted value using Linear Regression formula.
+14. Compare training accuracy and test accuracy for overfitting check.
+15. Predict and print class labels for 10 test samples.
+
+## → Phase 4: Model Evaluation & Metrics (30 Questions)
+
+### Theory (15)
+
+1. What is the purpose of model evaluation in ML?
+2. Define accuracy. When is it not reliable?
+3. What is precision, and how is it calculated?
+4. What is recall, and why is it important?
+5. Define F1-score. When is it preferred over accuracy?
+6. What is a confusion matrix? What do TP, FP, FN, TN mean?
+7. How does class imbalance affect accuracy?
+8. When to use precision vs recall in real life (e.g., fraud detection)?
+9. Define MAE, MSE, and RMSE.
+10. Which metric is more sensitive to large errors: MAE or MSE?
+11. What is R² score in regression?
+12. What’s the difference between evaluation for regression and classification?
+13. What does `sklearn.metrics` provide?
+14. How do we interpret a perfect model in classification?
+15. Why is model evaluation done on the test set, not train set?
+
+### Practical (15)
+
+1. Calculate accuracy using `accuracy_score(y_true, y_pred)`.
+2. Create a confusion matrix and interpret each value.
+3. Use `classification_report()` on test predictions.
+4. Visualize confusion matrix using `ConfusionMatrixDisplay`.
+5. Calculate precision and recall manually for a sample output.
+6. Use `mean_absolute_error()` on a regression model.
+7. Calculate MSE and RMSE using `sklearn.metrics`.
+8. Compare regression models using MAE, MSE, RMSE.
+9. Plot predicted vs actual values for regression.
+10. Write code to calculate F1-score.
+11. Interpret an F1-score of 0.80. What does it tell?
+12. Use `r2_score()` to evaluate regression performance.
+13. Create a classification model and print all metrics in one report.
+14. Calculate metrics for a highly imbalanced dataset (e.g., 95:5).
+15. Compare two models using accuracy, F1, and recall.
+
+---
+
+## → Phase 5: Unsupervised Learning (30 Questions)
+
+### Theory (15)
+
+1. What is unsupervised learning?
+2. How is it different from supervised learning?
+3. What is clustering used for?
+4. Define K-Means clustering.
+5. What is the elbow method and how is it used?
+6. What does a cluster center represent?
+7. What is the role of `inertia_` in K-Means?
+8. Define PCA and its purpose.
+9. How does PCA help in high-dimensional datasets?
+10. When do we use dimensionality reduction?
+11. What is the difference between KMeans and DBSCAN?
+12. What happens if you choose the wrong number of clusters?
+13. What does unsupervised learning output?
+14. Can clustering be used for customer segmentation?
+15. Why is visualization important in unsupervised learning?
+
+### Practical (15)
+
+1. Use `KMeans(n_clusters=3)` to cluster sample data.
+2. Plot the clusters using scatter plot with different colors.
+3. Print centroids of clusters.
+4. Use `elbow method` to choose optimal number of clusters.
+5. Calculate `inertia_` for different values of k.
+6. Perform PCA using `PCA(n_components=2)`.
+7. Reduce 4D data into 2D and visualize using scatter plot.
+8. Load `Mall_Customers.csv` and perform KMeans clustering.
+9. Plot clusters using age and spending score.
+10. Label each point with its cluster ID.
+11. Use `.fit_predict()` to get labels for each data point.
+12. Plot principal components after PCA.
+13. Compare original vs reduced features using `explained_variance_ratio_`.
+14. Use clustering on a synthetic dataset from `make_blobs()`.
+15. Visualize PCA-transformed dataset with cluster colors.
+
+---
+
+## → Phase 6: Model Tuning & Deployment (30 Questions)
+
+### Theory (15)
+
+1. What is hyperparameter tuning?
+2. What is the difference between parameters and hyperparameters?
+3. How does `GridSearchCV` work?
+4. What is `RandomizedSearchCV` and when is it better?
+5. What does cross-validation mean?
+6. What is the default number of folds in `GridSearchCV`?
+7. What are pipelines in Scikit-learn?
+8. Why do we need pipelines in real-world ML?
+9. How do we save models in Python?
+10. What’s the difference between `joblib` and `pickle`?
+11. When to use joblib over pickle?
+12. What is the benefit of saving trained models?
+13. How do you deploy a model after training?
+14. What are the risks of tuning on test data?
+15. What does `.best_params_` do in GridSearch?
+
+### Practical (15)
+
+1. Tune KNN using `GridSearchCV` with values of `n_neighbors`.
+2. Tune Decision Tree using `max_depth` and `min_samples_split`.
+3. Apply `RandomizedSearchCV` on Logistic Regression.
+4. Use `.cv_results_` to inspect scores from cross-validation.
+5. Create a pipeline with scaler + classifier using `Pipeline()`.
+6. Use `Pipeline` with `GridSearchCV`.
+7. Save a trained model using `joblib.dump()`.
+8. Load a saved model using `joblib.load()`.
+9. Predict using a loaded model on new data.
+10. Print best parameters using `.best_params_`.
+11. Store both scaler and model using pipeline.
+12. Train multiple models and choose the best using validation score.
+13. Create a modular pipeline to handle preprocessing and training.
+14. Save predictions to a CSV using `pd.to_csv()`.
+15. Wrap training + preprocessing into a single pipeline and deploy on unseen data.

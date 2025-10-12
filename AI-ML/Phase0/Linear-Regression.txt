@@ -1,0 +1,15 @@
+#Regression : It used when we need to predict NUmber 
+Like Price based on Flat Size
+Marks based on study Hours
+
+Regression
+    * Linear Regression
+    * Classification 
+        * Logistic Regression
+        * K-Nearest Regression
+        * Decesion Tree Clasifier 
+
+
+Cllasify:- Lebels or Grouping 
+    Like Spam mail filters
+    Like Fail or Pass 

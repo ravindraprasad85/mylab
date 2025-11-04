@@ -4,9 +4,9 @@ Marks based on study Hours
 
 Regression
     * Linear Regression
-    * Classification 
+    * Classification #We classified like Student Pass or Fail.... Email(Spam/Not Spam).....Image(Cat or Dog)
         * Logistic Regression
-        * K-Nearest Regression
+        * K-Nearest Regression #Works slow as its check all the possible values 
         * Decesion Tree Clasifier 
 
 
